@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+}
+
+.top-bar {
+    background-color: greenyellow;
+    padding: 55px;
+}
+
+.top-bar p {
+    font-size: 40px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bolder;
+
+}
+
+.task-bar {
+    padding: 10px;
+}
+
+.task-bar .task-bar-add {
+    font-size: 26px;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.task-bar .task-bar-add .task-bar-input {
+    padding-top: 20px;
+    display: flex;
+}
+
+.task-bar .task-bar-button {
+    background-color: rgb(0, 255, 179);
+    color: black;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-left: 30px;
+}
