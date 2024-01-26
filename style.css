@@ -73,3 +73,15 @@ body {
     margin-top: 20px;
     border: 10px;
 }
+
+.task-bar-edit .task-list {
+    margin-top: 20px;
+    font-family: "DM Sans", sans-serif;
+    list-style-type: "📝 ";
+    margin-left: 27px;
+}
+
+.task-bar-edit .task-list li {
+    font-size: 15px;
+    padding: 7px;
+}
