@@ -1,11 +1,15 @@
 body {
-    background-color: white;
+    background-color: black;
 }
 
 .top-bar {
     background-color: greenyellow;
+    border-radius: 8px;
+    margin-right: 57px;
+    margin-left: 57px;
+    margin-top: 20px;
     display: flex;
-    padding: 50px;
+    padding: 25px;
 }
 
 .top-bar img {
@@ -22,66 +26,89 @@ body {
 }
 
 .task-bar {
-    padding: 10px;
+    background-color: rgb(48, 45, 45);
+    border-radius: 8px;
+    margin-right: 257px;
+    margin-left: 257px;
+    margin-top: 20px;
+    position: relative;
+    min-height: 25vh;
+    padding: 1rem;
 }
 
-.task-bar .task-bar-add {
-    font-size: 26px;
-    font-family: "DM Sans", sans-serif;
-    padding-left: 55px;
+.task-bar .task-bar-add p{
     padding-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    color:white;
+    font-family: "DM Sans", sans-serif;
 }
 
-.task-bar .task-bar-add .task-bar-input {
+.task-bar .task-bar-input {
     padding-top: 20px;
     display: flex;
+    justify-content: center;
 }
 
-.task-bar .task-bar-add .task-bar-input input {
-    background-color: none;
-    color: black;
+.task-bar .task-bar-input input {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.task-bar .task-bar-add  .task-bar-input button{
-    background-color: rgb(0, 250, 83);
+.task-bar .task-bar-input button{
+    background-color: green;
     color: black;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
     border-radius: 10px;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
-.task-bar .task-bar-add .task-bar-input b:hover {
-    text-decoration: underline;
+.task-bar .task-bar-input button:hover {
+    background-color: red;
 }
 
-.task-bar-edit {
+/* ate aqui oka*/
+
+.task-bar .task-bar-edit {
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+.task-bar-edit ul {
     margin-top: 30px;
-    border-radius: 10px;
-    padding-left: 55px;
-    padding-top: 12px;
-}
-
-.task-bar-edit .task-text {
-    font-size: 26px;
-    font-family: "DM Sans", sans-serif;
-    color: black;
-}
-
-.task-bar-edit .task-options {
-    margin-top: 20px;
-    border: 10px;
-}
-
-.task-bar-edit .task-list {
-    margin-top: 20px;
-    font-family: "DM Sans", sans-serif;
     list-style-type: "📝 ";
-    margin-left: 27px;
+    list-style-position: inside;
+    color: white;
+    font-size: 16px;
 }
 
-.task-bar-edit .task-list li {
-    font-size: 15px;
-    padding: 7px;
+.task-bar-edit ul li {
+    font-family: "DM Sans", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: rgb(8, 59, 8);
+    margin-left: 57px;
+    margin-right: 57px;
+    border-radius: 8px;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.task-bar-edit ul button {
+    text-align: right;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    
 }
