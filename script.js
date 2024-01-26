@@ -15,8 +15,12 @@ function addTask() {
         clearInputBox()
         return
     } else {
+        
         let li = document.createElement("li")
+        let novaFrase = document.createElement("li");
+
         li.innerHTML = inputBox.value
+
         taskList.appendChild(li)
 
         let check = document.createElement("button")
@@ -32,23 +36,22 @@ function addTask() {
         li.appendChild(edit)
 
         edit.addEventListener('click', () => {
-            let edit = prompt('Digite aqui: ')
-            if(edit.length <= 0) {
+            let novaFrase = prompt('Digite aqui: ')
+
+            if(novaFrase.length <= 0) {
                 alert('Necessário digitar algo')
                 return
-            } else if(edit.length >= 100) {
+            } else if(novaFrase.length >= 100) {
                 alert('Você não pode digitar mais que 100 caracteres') 
             } else {
-                li.innerHTML = edit
-                return
+                li.innerHTML = novaFrase
+                
             }
         })
 
         clearInputBox()
     }
 }
-
-
 
 function clearInputBox() {
     inputBox.value = ''
