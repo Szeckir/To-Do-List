@@ -16,11 +16,10 @@ function addTask() {
         return
     } else {
         
-        let li = document.createElement("li")
-        let novaFrase = document.createElement("li");
-
-        li.innerHTML = inputBox.value
-
+        let li = document.createElement('li')
+        let liText = document.createElement('span')
+        liText.innerHTML = inputBox.value
+        li.appendChild(liText)
         taskList.appendChild(li)
 
         let check = document.createElement("button")
@@ -44,8 +43,8 @@ function addTask() {
             } else if(novaFrase.length >= 100) {
                 alert('Você não pode digitar mais que 100 caracteres') 
             } else {
-                li.innerHTML = novaFrase
-                
+                liText.innerHTML = novaFrase
+                return
             }
         })
 
