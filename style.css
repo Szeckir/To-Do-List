@@ -84,22 +84,24 @@ body {
 
 .task-bar-edit ul {
     margin-top: 30px;
-    list-style-position: inside;
     color: white;
     font-size: 16px;
 }
 
 .task-bar-edit ul li {
     font-family: "DM Sans", sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
     background-color: rgb(8, 59, 8);
-    margin-left: 57px;
-    margin-right: 57px;
+    margin-top: 13px;
     border-radius: 8px;
     padding: 10px; 
     display: flex;
+    
+}
+
+.task-bar-edit ul li span {
+    text-align: left;
+    color: white;
+    
 }
 
 .task-bar-edit ul li::before {
@@ -108,16 +110,16 @@ body {
 }
 
 
-.task-bar-edit ul button {
+.task-bar-edit ul li button {
     background-color: transparent;
     cursor: pointer;
     margin-left: auto;
 }
 
-
-.task-bar-edit ul button:last-child {
+.task-bar-edit ul li .buttons-tasks {
     margin-left: auto;
 }
+
 
 .task-bar-edit ul button:hover {
     background-color: rgba(240, 248, 255, 0.486);

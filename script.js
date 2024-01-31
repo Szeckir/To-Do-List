@@ -22,17 +22,23 @@ function addTask() {
         li.appendChild(liText)
         taskList.appendChild(li)
 
+        let buttonContainer = document.createElement('div')
+        buttonContainer.classList.add('buttons-tasks')
+
+        let edit = document.createElement("button")
+        edit.innerHTML = "✏️"
+        buttonContainer.appendChild(edit)
+
         let check = document.createElement("button")
         check.innerHTML = "❌"
-        li.appendChild(check)
+        buttonContainer.appendChild(check)
+
+        li.appendChild(buttonContainer)
+        taskList.appendChild(li)
 
         check.addEventListener('click', () => {
             li.remove()
         })
-
-        let edit = document.createElement("button")
-        edit.innerHTML = "✏️"
-        li.appendChild(edit)
 
         edit.addEventListener('click', () => {
             let novaFrase = prompt('Digite aqui: ')
